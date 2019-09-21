@@ -59,7 +59,7 @@ def url_scrape(searchkey):
     titles = titles[:len(titles) - 1]
 
     urls = []
-    for link in soup.find_all('a'):
+    for link in a:
         temp = link.get('href')
         if '/watch?' not in temp:
             continue
